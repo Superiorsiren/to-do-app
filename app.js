@@ -5,7 +5,7 @@ function onReady() {
   const newToDoText = document.getElementById('newToDoText');
   const toDoList = document.getElementById('toDoList');
 
-  addToDoForm.addEventListener('submit', () => {
+  addToDoForm.addEventListener('submit', event => {
     event.preventDefault();
 
     //get the newToDoText
@@ -21,7 +21,7 @@ function onReady() {
     checkbox.type = "checkbox";
 
     //det the title
-    newLi.textContent = title:
+    newLi.textContent = title;
 
     //attach the checkbox to the li
     newLi.appendChild(checkbox);
